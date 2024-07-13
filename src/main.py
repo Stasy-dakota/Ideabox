@@ -1,11 +1,9 @@
-from masks import get_mask_account, get_mask_card_number
-from widget import get_date, mask_account_card
-from processing import filter_by_state
-from processing import sort_by_date
+from src.masks import get_mask_account, get_mask_card_number
+from src.processing import filter_by_state, sort_by_date
+from src.widget import get_date, mask_account_card
 
-
-print(get_mask_account(1234567890123456))
 print(get_mask_card_number(23654890436512183622))
+print(get_mask_account(1234567890123456))
 
 
 print(mask_account_card("Visa Platinum 7000792289606361"))

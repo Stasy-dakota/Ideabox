@@ -1,4 +1,7 @@
-def get_mask_card_number(card_number: int) -> str:
+from typing import Any
+
+
+def get_mask_card_number(card_number: int) -> Any:
     """Функция маскировки банковской карты"""
     number_card_list = []
     str_card_number = str(card_number)
@@ -8,7 +11,7 @@ def get_mask_card_number(card_number: int) -> str:
     return " ".join(number_card_list)
 
 
-def get_mask_account(number_account: int) -> str:
+def get_mask_account(number_account: int) -> Any:
     """Функция маскировки номера банковского счета"""
     str_number_account = str(number_account)
     return "*" * 2 + str_number_account[-4:]
